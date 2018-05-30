@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 
-    $(document).on("click","#submitbutton",function(){
-        event.preventDefault();
+    //$(document).on("click","#submitbutton",function(){
+        //event.preventDefault();
     
         //Variables of Query URL (Date in UNIX)
         var APIkey = "db1f13174ea9e50874eb00cef8b7d022";
         var stage = "43.629245900,-79.415239300";
-        var inputDate=new Date($("#dateinput").val()).getTime()/1000;
-     
+        //var inputDate=new Date($("#dateinput").val()).getTime()/1000;
+        var inputDate = "1530144000";
         var queryURL =  "https://api.darksky.net/forecast/" + APIkey + "/" + stage +  "," + inputDate + "?units=si";
         console.log(queryURL);
         
@@ -24,13 +24,13 @@ $(document).ready(function(){
                 var temperature = forecast.temperatureHigh;
                 var humidity = forecast.humidity;
                 var icon = forecast.icon;
-    
-            $("#overview").text(overview);
-            $("#temp").text(temperature + " C");
-            $("#humidity").text(humidity);
-            $("#date").text(timeConverter(date));
             
-            var skycons = new Skycons({"color": "black"});
+            //$("#exampleweather").append(overview);
+            $("#exampleweather").append(temperature + " C");
+            //$("#humidity").text(humidity);
+            //$("#dateexample").text(timeConverter(date));
+            
+            var skycons = new Skycons({"color": "green"});
             skycons.add("icon1",icon);
             skycons.play();
             })
@@ -50,7 +50,7 @@ $(document).ready(function(){
             }
     
         })
-    })
+    //})
             //Google Maps API Key
             //AIzaSyAUH7yXEgNlU0cB0MldFRXPH1BiDQHEuFE
             //Adding the icon
