@@ -39,9 +39,25 @@ img {
 .text-block {
     position: absolute;
     bottom: 5px;
-    right: 35%;
+    left:5%;
     background-color: black;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    width:90%;
+    text-align: center;
+    
+}
+h4{
+    font-size: 1rem;
+}
+
+.concertDate {
+   position: absolute;
+   bottom: 200px;
+   left:69%;
+   
+   background-color:black;
+     
+    
 }
