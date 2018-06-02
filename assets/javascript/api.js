@@ -1,3 +1,5 @@
+
+
 function TicketMaster(){
 
 var queryURL= "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=527&apikey=pgJ6dICsI0gxvL7bAgiXrKr7p2I7pfZc"
@@ -19,16 +21,13 @@ $.ajax({
                 var ConcertImage = $('<img src="'+ results[i].images[1].url +'">' );
                 $("#Hot").replaceWith(ConcertImage);
                  
+               var ConcertName=$('<h4>'+ results[iw].name + '</h4>');
 
-              var Dates= $(results[i].dates.start);
+               $("#Title").replaceWith(ConcertName);
+             
               
-                // var ConcertName= $(results[i].name);
-
-                // $("#Hot").prepend(ConcertName);
-                
-                
                 }
-
+                
                 console.log(results);
                 // Do other things.
              },
@@ -40,6 +39,10 @@ $.ajax({
 
 
 
-}
+};
+
+
+
+
 
 TicketMaster();
