@@ -24,6 +24,7 @@ a:active {
     display: inline-block;
 }
 
+<<<<<<< HEAD
 img {
    
     width:300px;
@@ -61,3 +62,9 @@ h4{
      
     
 }
+=======
+a.navbar-brand {
+    color: #28a745;
+    font-size: 28px;
+}
+>>>>>>> master
