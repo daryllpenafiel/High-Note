@@ -18,7 +18,8 @@ nav.navbar{
 }
 
 a.navbar-brand {
-    color: white;
+    color: #28a745;
+    font-size: 28px;
 }
 
 a.nav-link {

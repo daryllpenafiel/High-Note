@@ -16,7 +16,7 @@
   <div class="row">
     <div class="col-md-12">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">High Note</a>
+        <a class="navbar-brand" href="./index.html">High Note</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,29 +29,34 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Concerts</a>
+              <a class="nav-link" href="./searchresults.html">Concerts</a>
             </li>
-            <li class="nav-item dropdown">
+
+
+           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Genres
               </a>
+
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item">Hip-hop</a>
-                <a class="dropdown-item">Electronic Dance Music</a>
-                <a class="dropdown-item">Rock</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-hiphop" data-value="hip hop">Hip-hop</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-EDM" data-value="Electronic Dance Music">Electronic Dance Music</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-rock" data-value="rock"> Rock</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-jazz" data-value="jazz"> Jazz</a>
+              </div></li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">Surprise Me!</a>
                 </li>
               </div>
-            </li>
           </ul>
 
           <form class="form-inline">
-            <input class="form-control mr-sm-2" id="search-page-search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submitbutton">Search</button>
+            <input class="form-control mr-sm-2" type="search" id="main-page-search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="mainpagesearchbutton">Search</button>
           </form>
         </div>
-      </nav>
+        </nav>
     </div>
   </div>
   
@@ -61,6 +66,9 @@
   <div id="output-page">
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="./assets/javascript/searchboxjs.js"></script>

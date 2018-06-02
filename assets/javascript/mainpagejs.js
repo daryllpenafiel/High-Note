@@ -8,4 +8,14 @@ $(document).ready(function(){
         console.log(keyword);
         localStorage.setItem('keyword', keyword);
     })
+
+    $(document).on("click",".dropdown-genre",function(){
+        event.preventDefault();
+        document.location.href='./searchresults.html';
+        localStorage.clear();
+        var keyword=$(this).attr("data-value");
+        console.log(keyword);
+        localStorage.setItem('keyword', keyword);
+    })
+
 })
