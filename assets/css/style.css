@@ -24,7 +24,7 @@ a:active {
     display: inline-block;
 }
 
-.eow-details{
+.eow-details {
     float: left;
     padding-left: 80px;
 }
@@ -83,4 +83,17 @@ a.navbar-brand {
 
 #exampleTemp {
     padding-top: 0px;
+}
+
+#eow-img {
+    position: relative;
+}
+
+#fire-button {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    color: green;
+    font-size: 20px;
+    background-color: black;
 }
