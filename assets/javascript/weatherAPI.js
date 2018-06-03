@@ -7,8 +7,7 @@ $(document).ready(function(){
         //Variables of Query URL (Date in UNIX)
         var APIkey = "db1f13174ea9e50874eb00cef8b7d022";
         var stage = "43.629245900,-79.415239300";
-        //var inputDate=new Date($("#dateinput").val()).getTime()/1000;
-        var inputDate = "1530144000";
+        var inputDate=(new Date("2018-06-02").getTime()/1000);
         var queryURL =  "https://api.darksky.net/forecast/" + APIkey + "/" + stage +  "," + inputDate + "?units=si";
         console.log(queryURL);
         
