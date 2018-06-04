@@ -14,9 +14,7 @@ $(window).ready(function () {
     function getResults() {
 
         var retrievedKeyword = localStorage.getItem('keyword');
-
         var searchInput = $("#search-page-search").val();
-        console.log(searchInput);
 
         if (!retrievedKeyword) {
             var searchInput = $("#search-page-search").val();
@@ -37,6 +35,7 @@ $(window).ready(function () {
             url: queryURL,
             method: "GET"
         }).then(function (response) {
+            console.log(queryURL);
 
             if (!response) {
                 var errorP = $('<p>').text("Sorry no results found. Try another search");
@@ -53,6 +52,7 @@ $(window).ready(function () {
                     var displayURL = display[i].url;
                     var displayIMG = display[i].images[1].url;
                     var displayDate = display[i].dates.start.localDate;
+                    var displayVenue = display[i]._embedded.venues[0].name;
                     var inputDate = $(".card-date").attr("data-date");
 
                     var outputDiv = $("<div class='card' style='width: 20rem'>");
@@ -60,9 +60,11 @@ $(window).ready(function () {
                     var outputDetails = $("<div class='card-body'>");
                     var cardTitle = $("<h6 class=card-title>").text(displayName);
                     var outputA = $("<a class='eventlink btn btn-success'>").attr("href", displayURL).text("Go to Ticketmaster");
-                    var outputDate = $("<h6 class='card-date'>").attr("data-date", displayDate).text(displayDate);
+                    var outputDate = $("<p class='card-date'>").attr("data-date", displayDate).text("Date: " + displayDate);
+                    var outputVenue = $("<p class='card-venue'>").text("Venue: " + displayVenue);
                     outputDetails.append(cardTitle);
-                    outputDetails.append(outputDate)
+                    outputDetails.append(outputVenue);
+                    outputDetails.append(outputDate);
                     outputDetails.append(outputA);
 
                     outputDiv.append(outputIMG);
