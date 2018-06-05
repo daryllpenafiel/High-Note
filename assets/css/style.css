@@ -1,3 +1,14 @@
+body {
+    /*background-image: url('../images/black.png');*/
+    height: auto;
+}
+.container {
+    background-color: white;
+}
+
+.big-container {
+    margin-top: -50px;
+}
 nav.navbar {
     background-color: black;
     color: white;
@@ -106,6 +117,7 @@ a.navbar-brand {
 #artistOfTheWeek {
     text-align: center;
     line-height: 20px;
+    /*border: solid 2px black;*/
 }
 
 #aow-name {
