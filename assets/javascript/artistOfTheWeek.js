@@ -39,15 +39,15 @@ $(window).ready(function () {
         $("#venueLocation").append("Date: "+date);
         $("#nameArtist").html(artistName);
 
-        $("#upcomingConcerts").append("<br><h5>Venue</h5>"+location+"<br>");
-        $("#upcomingConcerts").append(response._embedded.events[0].promoter.name+"<br>");
+        $("#upcomingConcerts").append(location+"<br>");
+        //$("#upcomingConcerts").append(response._embedded.events[0].promoter.name+"<br>");
         $("#upcomingConcerts").append(date);
         $("#upcomingConcerts").append(" ("+time+")");
 
         // linking the page to the ticket master website
         var imageArtistOfTheWeekLinkurl = response._embedded.events[0].url;
         var imageArtistOfTheWeekLink = $("<a>").attr("href", imageArtistOfTheWeekLinkurl);
-        var imageArtistOfTheWeek = $("<img height='250' width='250'>").attr('src',response._embedded.events[0].images[0].url);
+        var imageArtistOfTheWeek = $("<img id='donaldG'>").attr('src',response._embedded.events[0].images[0].url);
         $("#artistImage").append(imageArtistOfTheWeekLink);
         imageArtistOfTheWeekLink.append(imageArtistOfTheWeek);
 
@@ -68,7 +68,7 @@ $(window).ready(function () {
           var allEvents = [];
           allEvents[i] = $("<div>");
           allEvents[i].append("<br>"+response[i].datetime);
-          allEvents[i].append("<br>"+response[i].venue.name+" ,"+response[i].venue.city+" ,"+response[i].venue.country);
+          allEvents[i].append("<br>"+response[i].venue.name+", "+response[i].venue.city+", "+response[i].venue.country);
 
           $("#upcomingEvents").append(allEvents);
         }

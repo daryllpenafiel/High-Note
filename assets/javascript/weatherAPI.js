@@ -1,11 +1,9 @@
 $(document).ready(function(){
 
-    
-        //Variables of Query URL (Date in UNIX)
         var APIkey = "db1f13174ea9e50874eb00cef8b7d022";
         var stage = "43.629245900,-79.415239300";
         //var inputDate=new Date($("#dateinput").val()).getTime()/1000;
-        var inputDate = "1528502400";
+        var inputDate = parseInt(1528502400+86400);
         var queryURL =  "https://api.darksky.net/forecast/" + APIkey + "/" + stage +  "," + inputDate + "?units=si";
         
         $.ajax({

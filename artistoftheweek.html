@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/aowstyle.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
+                            <a class="nav-link" href="./index.html">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -62,79 +62,75 @@
     </div>
     </div>
 
-    <br>
-    <br>
-    <br>
 
     </div>
     </div>
 
-    <div class="row">
-        <div class="container">
-            <div class="col-md-6 float-left">
-                <h3 id="nameArtist"></h3>
+    <div class="aow-row">
+
+        <div class="row">
+            <div>
+                <div class="col-md-6 float-left">
+
+                    <h3 id="nameArtist"></h3>
                     <a href="https://placeholder.com" id="artistImage">
                         <!-- <img src="http://via.placeholder.com/250x250" id="artistImage"> -->
                     </a>
+
+                    <div id='aow-details'>
+                        <div id="upcomingConcerts">
+                            <h6>Upcoming Concerts:</h6>
+                        </div>
+
+                        <div id="aow-weather">
+                            <canvas id="icon3" width="48" height="48"></canvas>
+                        </div>
+
+                        <button class='btn btn-outline-success my-2 my-sm-0' id="TicketMasterLink">
+                        </button>
+                    </div>
+
+                    <br>
+                    <!--<div>
+                        Sample Spotify link here
+                    </div>-->
+                    <br>
+                    <div>
+                        <h6>Bio</h6>
+                        Childish Gambino is the hip-hop alter ego of multi-hyphenate American entertainer Donald Glover, who is also known for acting
+                        roles on television shows like Community and the Emmy- and Golden Globe-winning Atlanta, as well
+                        as the film Solo: A Star Wars Story. As Childish Gambino, Glover performs off-kilter hip-hop and
+                        R&B-inspired funk, for which he won a Grammy for Best Traditional R&B Performance in 2017 for his
+                        single, "Redbone."
+                        <br>
+                        <br> In 2018, his politically-charged song "This Is America" debuted at number one atop the Billboard
+                        Hot 100, buoyed by a viral music video that addressed gun violence and racial injustice.
+                    </div>
+                </div>
+                <div class="col-md-6 float-right" <div>
+                    <h6 id="upcomingEvents">Other Events:
+                        <br>
+                    </h6>
+
+                </div>
             </div>
+
         </div>
     </div>
-    <div class="row">
-        <div class="container">
-            <div class="col-md-6 float-left">
-                <div id="upcomingConcerts"><h5>Upcoming Concerts:</h5></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-                <div id="TicketMasterLink">
-                </div>
-                <br>
-                <br>
-                <div>
-                    Weather on date
-                </div>
-                <br>
-                <br>
-                <div>
-                    Sample Spotify link here
-                </div>
-                <div>
-                    <h5>Lyrics</h5>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eros libero, feugiat non elit eu, mollis commodo odio. Proin
-                    suscipit felis mi, id ultrices leo euismod ut. Nunc sit amet orci quis dui vestibulum commodo at at mi.
-                    Morbi neque purus, rutrum ut elit a, convallis molestie mi. Mauris luctus purus augue, ut tincidunt tellus
-                    accumsan vel. Etiam a lorem id quam fermentum pellentesque. Donec ac massa augue. Aliquam congue ultricies
-                    libero nec lacinia. Nam maximus ipsum in tempus euismod. Fusce tristique tellus et neque maximus, in
-                    tristique nibh imperdiet. Etiam gravida, velit interdum pulvinar luctus, urna odio tristique arcu, non
-                    porta neque urna ac nulla. Ut condimentum metus in nulla convallis, id mollis tortor viverra. Donec facilisis
-                    ligula at odio auctor posuere. Mauris a elit vitae massa sagittis accumsan. Nunc ornare iaculis nunc
-                    in lacinia. Nullam mattis consectetur dui sit amet semper. Vivamus eros enim, volutpat in libero quis,
-                    venenatis consectetur purus. Aliquam ut urna eros. Praesent aliquet id libero at ultrices. Praesent iaculis
-                    mi magna, a dictum mi sodales eu. Mauris rhoncus at massa eu bibendum. Aliquam tristique, ex a tristique
-                    scelerisque, libero justo auctor mauris, vel dictum odio enim eget odio. Vestibulum ac mattis risus,
-                    vitae viverra ex. Donec in enim posuere, rhoncus velit vehicula, dapibus sem. Duis rhoncus interdum pulvinar.
-                    Duis et ligula leo. Donec eu arcu nisi. Sed et lacinia lectus, ac pulvinar lectus. Sed tempor urna in
-                    quam consectetur scelerisque. Integer id ipsum ac metus hendrerit efficitur.
-                </div>
-            </div>
-            <div class="col-md-6 float-right" <div>
-                <h5 id="upcomingEvents">Upcoming Events:<br></h5>
-                
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
-  <script src="./assets/javascript/mainpagejs.js"></script>
-  <script src="./assets/javascript/artistOfTheWeek.js"></script>
-
-
-    <script src="artistOfTheWeek.js"></script>
+    <script src="./assets/javascript/mainpagejs.js"></script>
+    <script src="./assets/javascript/artistOfTheWeek.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="./assets/javascript/api.js"></script>
-    <script src="./assets/javascript/weatherAPI.js"></script>
+    <script src="./assets/javascript/AoWweatherAPI.js"></script>
     <script src="./assets/javascript/skycons.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
