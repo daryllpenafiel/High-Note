@@ -1,4 +1,4 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,15 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Welcome to High Note </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/TestStyle.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/flickity.min.css">
+
+  <link rel="icon" media="screen" href="./assets/images/favicon.jpg">
 </head>
 
 <body>
+
   <div class="row">
     <div class="col-md-12">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">High Note</a>
+        <a class="navbar-brand" href="./index.html">High Note</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,61 +33,150 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Concerts</a>
+              <a class="nav-link" href="./searchresults.html">Concerts</a>
             </li>
-            <li class="nav-item dropdown">
+
+
+           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Genres
               </a>
+
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item">Hip-hop</a>
-                <a class="dropdown-item">Electronic Dance Music</a>
-                <a class="dropdown-item">Rock</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-hiphop" data-value="hip hop">Hip-hop</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-EDM" data-value="Electronic Dance Music">Electronic Dance Music</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-rock" data-value="rock"> Rock</a>
+                <a class="dropdown-item dropdown-genre" id="dropdown-jazz" data-value="jazz"> Jazz</a>
+              </div></li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">Surprise Me!</a>
                 </li>
               </div>
-            </li>
           </ul>
 
           <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" id="main-page-search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="mainpagesearchbutton">Search</button>
           </form>
         </div>
-        </nav>
+      </nav>
     </div>
   </div>
 
   <br>
+
+  <div class="page-body">
 
   <div class="row">
     <div class="container">
       <div class="col-md-12 float-left">
 
         <h3>Welcome to High Note!</h3>
-        
+
         <br>
         <h4>Upcoming Events</h4>
-        <a href="https://placeholder.com">
-          <img src="http://via.placeholder.com/250x250">
-        </a>
-        <a href="https://placeholder.com">
-          <img src="http://via.placeholder.com/250x250">
-        </a>
-        <a href="https://placeholder.com">
-          <img src="http://via.placeholder.com/250x250">
-        </a>
-        <a href="https://placeholder.com">
-          <img src="http://via.placeholder.com/250x250">
-        </a>
-        <br>
-        <br>
-      
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+
+
+          <div class="carousel-cell">
+            <a id="hyperlink">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink1">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink2" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink3" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink4" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink5" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink6" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink7" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink8" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-cell">
+            <a id="hyperlink9" href="">
+              <img id="Hot" src="http://via.placeholder.com/250x250">
+              <div class="text-block">
+                <h4 id="Title">Test</h4>
+                <p id="date"></p>
+              </div>
+            </a>
+          </div>
+          
+
+          <br>
+          <br>
+        </div>
       </div>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="container">
       <div class="col-md-6 float-left">
@@ -103,16 +198,18 @@
             <canvas id="icon1" width="64" height="64"></canvas>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="./assets/javascript/api.js"></script>
   <script src="./assets/javascript/weatherAPI.js"></script>
   <script src="./assets/javascript/skycons.js"></script>
-  
+  <script src="./assets/javascript/flickity.pkgd.min.js"></script>
+
+
 </body>
 
 </html>
