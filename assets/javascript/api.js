@@ -18,7 +18,7 @@ function TicketMaster() {
     async: true,
     dataType: "json",
     success: function (json) {
-      console.log(json);
+      //console.log(json);
       // Parse the response.
       var results = json._embedded.events;
 
@@ -70,7 +70,7 @@ function TicketMaster() {
 
       
 
-      console.log(results);
+      //console.log(results);
 
       // Do other things.
     },

@@ -4,10 +4,10 @@ $(window).ready(function () {
     getResults();
 
     $("#spSearchButton").on("click", function () {
-        console.log("click");
+       // console.log("click");
         document.location.href = './searchresults.html';
         var keyword2 = $("#spSearch").val();
-        console.log(keyword2);
+        //console.log(keyword2);
         localStorage.setItem('keyword', keyword2);
     });
 
@@ -19,10 +19,10 @@ $(window).ready(function () {
         if (!retrievedKeyword) {
             var searchInput = $("#search-page-search").val();
             var artistSearch = searchInput;
-            console.log(artistSearch);
+            //console.log(artistSearch);
         } else {
             artistSearch = retrievedKeyword;
-            console.log(artistSearch);
+            //console.log(artistSearch);
             localStorage.clear();
         }
 
@@ -33,9 +33,9 @@ $(window).ready(function () {
 
         $.ajax({
             url: queryURL,
-            method: "GET"
+            method: "GET",
         }).then(function (response) {
-            console.log(queryURL);
+            //console.log(queryURL);
 
             if (!response) {
                 var errorP = $('<p>').text("Sorry no results found. Try another search");
@@ -82,9 +82,9 @@ $(window).ready(function () {
         document.location.href = './searchresults.html';
         localStorage.clear();
         var keyword = $(this).attr("data-value");
-        console.log(keyword);
+        //console.log(keyword);
         localStorage.setItem('keyword', keyword);
-        console.log('dropdpown')
+        //console.log('dropdpown')
     })
 
 })

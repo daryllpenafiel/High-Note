@@ -4,14 +4,13 @@ $(window).ready(function () {
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&apikey=" + APIkey + "&city=Toronto&sort=date,desc&keyword=Childish%Gambino"
     
     console.log(queryURL);
-    console.log(queryURL);
 
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response);
-        console.log(response._embedded.events[0].images[0].url);
+        //console.log(response);
+        //console.log(response._embedded.events[0].images[0].url);
         
         // image of the artist from the API response
         var image = $("<img id='aow-img'>").attr('src',response._embedded.events[0].images[0].url);
@@ -24,11 +23,11 @@ $(window).ready(function () {
 
         // displaying the artist of the week name, location of the shows and date
         var artistName = response._embedded.events[0].name;
-        console.log(artistName);
+        //console.log(artistName);
         var location = response._embedded.events[0]._embedded.venues[0].name;
-        console.log(location);
+        //console.log(location);
         var date = response._embedded.events[0].dates.start.localDate;
-        console.log(date);
+        //console.log(date);
         var time = response._embedded.events[0].dates.start.localTime;
         
         var subTitle = $("<div id='subT'>");
@@ -63,7 +62,7 @@ $(window).ready(function () {
         url: qURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response);
+        //console.log(response);
         
         for(var i=0; i<10; i++){
           var allEvents = [];
@@ -126,7 +125,7 @@ $(window).ready(function () {
        }
 
        function receiveMessage(event){
-         console.log(event);
+         //console.log(event);
          var msg=event.data;
          if(typeof msg==='string'){
            var parseArray=msg.split('&');

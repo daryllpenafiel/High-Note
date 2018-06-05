@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-
-    //$(document).on("click","#submitbutton",function(){
-        //event.preventDefault();
     
         //Variables of Query URL (Date in UNIX)
         var APIkey = "db1f13174ea9e50874eb00cef8b7d022";
@@ -10,7 +7,6 @@ $(document).ready(function(){
         //var inputDate=new Date($("#dateinput").val()).getTime()/1000;
         var inputDate = "1528502400";
         var queryURL =  "https://api.darksky.net/forecast/" + APIkey + "/" + stage +  "," + inputDate + "?units=si";
-        console.log(queryURL);
         
         $.ajax({
             url: queryURL,
@@ -18,7 +14,6 @@ $(document).ready(function(){
         }).then(function(response){
             var forecast = response.daily.data[0];
                 var date = forecast.time;
-                console.log(timeConverter(date));
                 var forecast = response.daily.data[0];
                 var overview = forecast.summary;
                 var temperature = forecast.temperatureHigh;

@@ -5,7 +5,6 @@ $(document).ready(function(){
         document.location.href='./searchresults.html';
         localStorage.clear();
         var keyword=$("#main-page-search").val();
-        console.log(keyword);
         localStorage.setItem('keyword', keyword);
     })
 
@@ -14,7 +13,6 @@ $(document).ready(function(){
         document.location.href='./searchresults.html';
         localStorage.clear();
         var keyword=$(this).attr("data-value");
-        console.log(keyword);
         localStorage.setItem('keyword', keyword);
     })
 
