@@ -1,5 +1,5 @@
 body {
-    /*background-image: url('../images/black.png');*/
+    background-image: url('../images/black.png');
     height: auto;
 }
 .container {
@@ -7,7 +7,7 @@ body {
 }
 
 .big-container {
-    margin-top: -50px;
+    width: 98%;
 }
 nav.navbar {
     background-color: black;
