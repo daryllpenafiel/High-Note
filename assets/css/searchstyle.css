@@ -42,5 +42,18 @@ a:active {
 .card {
     display: inline-block;
     margin: 15px;
-    padding: 5px;
+    padding: 10px;
+
+}
+
+.card-body {
+    padding: 3px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-date, .card-venue {
+    margin: 5px;
 }
