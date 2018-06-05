@@ -3,6 +3,17 @@ nav.navbar {
     color: white;
 }
 
+body {
+    background-image: url('../images/black.png');
+}
+
+.white-container {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+}
+
 a.navbar-brand {
     color: white;
 }
@@ -130,5 +141,11 @@ body {
 }
 
 button#TicketMasterLink {
-    margin: 0 250px;
+    margin: 0 180px;
+}
+
+#songplayer {
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: center;
 }
