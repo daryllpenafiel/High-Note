@@ -26,7 +26,6 @@ html,
 body {
   height: 100%;
   background-image:url("../images/concert1.jpg");
-  text-align: center;
 }
 
 body {
@@ -71,6 +70,7 @@ body {
 
 .nav-masthead .nav-link + .nav-link {
   margin-left: 1rem;
+  color: white;
 }
 
 .nav-masthead .active {
@@ -107,53 +107,15 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
-.picturepicture {
-    height: 300px;
-    width: 300px;
+#mainpagesearchbutton {
+  margin-top: 40px;
 }
 
-.result-block {
-    line-height: 5px;
+.inner{
+  color: black;
 }
 
-nav.navbar{
-    background-color: black;
-    color: white;
+.masthead-brand {
+  color: white;
 }
 
-a.navbar-brand {
-    color: #28a745;
-    font-size: 28px;
-}
-
-a.nav-link {
-    color: white;
-}
-
-a:active {
-    color: green;
-}
-
-.event-example {
-    line-height: 5px;
-}
-
-
-.card {
-    display: inline-block;
-    margin: 15px;
-    padding: 10px;
-    color: black;
-}
-
-.card-body {
-    padding: 3px;
-}
-
-.card-title {
-    font-weight: bold;
-}
-
-.card-date, .card-venue {
-    margin: 5px;
-}
