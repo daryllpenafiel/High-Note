@@ -1,3 +1,3 @@
 # High-Note
 
-from the rezabranch
+A Toronto concert search website that utilized the Ticketmaster API.
