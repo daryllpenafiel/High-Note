@@ -16,4 +16,12 @@ $(document).ready(function(){
         localStorage.setItem('keyword', keyword);
     })
 
+
+    $(document).on("keypress",function(){
+        if (event.keyCode === 13) {
+            console.log("enter");
+            $("#mainpagesearchbutton").click();
+        }
+    });
+
 })
