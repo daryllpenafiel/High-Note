@@ -43,6 +43,7 @@ body {
 
 .cover-container {
   max-width: 1200px;
+  min-width: auto;
 }
 
 /*
@@ -85,6 +86,8 @@ body {
   .nav-masthead {
     float: right;
   }
+
+  color: white;
 }
 
 
@@ -156,4 +159,12 @@ a:active {
 
 .card-date, .card-venue {
     margin: 5px;
+}
+
+.d-flex {
+  display: none;
+}
+
+.mb-auto {
+  margin-bottom: 0!important;
 }
